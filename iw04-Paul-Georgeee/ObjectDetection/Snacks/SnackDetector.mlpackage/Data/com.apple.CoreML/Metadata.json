@@ -1,0 +1,18 @@
+{
+  "MLModelDescriptionKey" : "Object detector created by Turi Create (version 6.4.1)",
+  "MLModelCreatorDefinedKey" : {
+    "version" : "1",
+    "training_iterations" : "26000",
+    "com.github.apple.turicreate.version" : "6.4.1",
+    "classes" : "apple,banana,cake,candy,carrot,cookie,doughnut,grape,hot dog,ice cream,juice,muffin,orange,pineapple,popcorn,pretzel,salad,strawberry,waffle,watermelon",
+    "com.github.apple.os.platform" : "macOS-10.16-x86_64-i386-64bit",
+    "feature" : "image",
+    "include_non_maximum_suppression" : "True",
+    "type" : "object_detector",
+    "iou_threshold" : "0",
+    "confidence_threshold" : "0",
+    "annotations" : "annotations",
+    "max_iterations" : "26000",
+    "model" : "YOLOv2"
+  }
+}

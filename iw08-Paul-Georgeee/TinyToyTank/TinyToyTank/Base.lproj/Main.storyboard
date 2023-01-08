@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="TinyToyTank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zHZ-cY-bbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYR-ai-c7r">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5M-nN-3mb">
+                                <rect key="frame" x="257" y="744" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TankRight"/>
+                                <connections>
+                                    <action selector="tankRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNd-P8-taO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-wv-gJK">
+                                <rect key="frame" x="164" y="744" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TankForward"/>
+                                <connections>
+                                    <action selector="tankForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IC1-ia-taT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGB-ks-aqJ">
+                                <rect key="frame" x="257" y="651" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TurretRight"/>
+                                <connections>
+                                    <action selector="turretRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DJ6-Sv-2xs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnL-HQ-8oP">
+                                <rect key="frame" x="71" y="651" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TurretLeft"/>
+                                <connections>
+                                    <action selector="turretLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5y-1s-kWV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dq0-cg-7av">
+                                <rect key="frame" x="164" y="651" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="CannonFire"/>
+                                <connections>
+                                    <action selector="openFire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1PS-Gt-sF3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWp-dD-Lsc">
+                                <rect key="frame" x="71" y="744" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TankLeft"/>
+                                <connections>
+                                    <action selector="tankLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9Y-UG-ssD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Dj-cB-xJl"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Dj-cB-xJl" firstAttribute="trailing" secondItem="UYR-ai-c7r" secondAttribute="trailing" id="22P-GF-mzF"/>
+                            <constraint firstItem="UYR-ai-c7r" firstAttribute="top" secondItem="5Dj-cB-xJl" secondAttribute="top" id="4bO-8R-fD9"/>
+                            <constraint firstItem="5Dj-cB-xJl" firstAttribute="bottom" secondItem="UYR-ai-c7r" secondAttribute="bottom" id="4nh-Hz-aXG"/>
+                            <constraint firstItem="UYR-ai-c7r" firstAttribute="leading" secondItem="5Dj-cB-xJl" secondAttribute="leading" id="cFO-Mv-MQA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="UYR-ai-c7r" id="9wC-zp-KQA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CannonFire" width="256" height="256"/>
+        <image name="TankForward" width="256" height="256"/>
+        <image name="TankLeft" width="256" height="256"/>
+        <image name="TankRight" width="256" height="256"/>
+        <image name="TurretLeft" width="256" height="256"/>
+        <image name="TurretRight" width="256" height="256"/>
+    </resources>
+</document>
